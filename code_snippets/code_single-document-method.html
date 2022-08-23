@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS - Single Document Method</title>
+	<style>
+		body {background-color:magenta; color:aliceblue;}
+		div {
+			background-color:red;
+			width:25vw; /*first declaration*/
+			width:75%;  /*2nd declaration*/
+			width:48%;  /*3rd declaration - computer reads last declaration*/
+			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			font-size:30em;
+			font-size:30px;
+			text-align:center;
+			height:300px;
+			height:50vh;
+			display:inline-block;
+			float:left;
+			/*TRBL top right bottom left*/ padding: 20px 0 20px 0;
+			margin:1%;
+
+			
+		}
+
+		h1 {color:gold; background-color:black;}
+		div:nth-of-type(2)>h1{background-color:green;}
+		.blue-banner{background-color:cyan;}
+		#unique{background-color:#555;}
+		
+	</style>
+</head>
+
+<body>
+	
+<div>
+	<h1 class="blue-banner">HEADING ONE</h1>
+	This is a div element
+	</div>
+	
+	<div id="unique">
+			<h1>HEADING TWO</h1>
+            This is the second div
+	</div>
+	
+	<div>
+		<h1 class="blue-banner">HEADING THREE</h1>
+	This is the third div
+	</div>
+	
+	<div>
+			<h1>HEADING FOUR</h1>
+          This is the fourth div
+	</div>
+	
+</body>
+</html>

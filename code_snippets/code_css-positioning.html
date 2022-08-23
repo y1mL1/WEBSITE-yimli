@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Positioning</title>
+	<style>
+		#blue{background-color:blue; width:100vw; height:100vh;}
+		#red{background-color:red; width:200px; height:200px;}
+		
+    /* RELATIVE POSITIONING */
+		#red{position:relative; top:50px; /*left:75px;*/}
+
+/*ABSOLUTE CHILD -RELATIVE PARENT POSITIONING		*/
+		#blue{position:relative;}
+		#red{position:absolute; top:50%;
+			/* left:50% */
+			
+			transform:translate(-50%, -50%);
+		
+		}
+		
+/* FIXED POSITION */
+		#red{
+			position:fixed;
+			top:0;
+			right:0;
+			transform:none;
+			width:50px;
+			height:50px;
+		}
+		
+		
+		
+	</style>
+</head>
+
+<body>
+	
+	<div id="blue">
+		 <div id="red">FIXED POSITION</div>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi facere ut, dicta, velit, eius molestiae nam, voluptas eum blanditiis laborum mollitia repudiandae ipsa voluptatibus nisi. Exercitationem, dolorum, iste. Natus rerum unde voluptas eos, provident exercitationem perspiciatis. Totam optio error illum, earum, ipsam labore, fuga ullam velit perspiciatis odit animi asperiores voluptatem eaque facere voluptatibus expedita. Pariatur quam natus repudiandae dicta tempore esse architecto accusamus nobis cumque ab nesciunt eum numquam modi dolor ratione inventore incidunt, ullam tempora veniam atque sit vitae. Facilis voluptate fuga dolorem ullam corrupti a earum aperiam sequi, voluptatibus, officia minima laborum cupiditate harum labore praesentium corporis.</p>
+	
+	</div>	 
+</body>
+</html>
