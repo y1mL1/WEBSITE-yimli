@@ -100,7 +100,7 @@ header {background-color:black;
 }
 
 section {
-	background-color:magenta;
+	background-color:black;
 	display:grid;
 	grid-template-columns:50% 50%;
 
@@ -110,7 +110,7 @@ figure:nth-of-type(1){background-image:url("images/thumb1.jpg"); background-size
 figure:nth-of-type(2){background-image:url("images/thumb2.jpg"); background-size:cover;}
 figure:nth-of-type(3){background-image:url("images/thumb3.jpg"); background-size:cover;}
 figure:nth-of-type(4){background-image:url("images/thumb4.jpg"); background-size:cover;}
-figure:nth-of-type(5){background-image:url("images/"); background-size:cover;}
+figure:nth-of-type(5){background-image:url("images/webProjects-logo.png"); background-size:cover;}
 
 
 .overlay{
